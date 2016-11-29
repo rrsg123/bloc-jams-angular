@@ -10,10 +10,12 @@
 		</div>
 	</section>
 	<table class="album-view-song-list">
-		<tr class="album-view-song-item">
+		<tr class="album-view-song-item" ng-mouseover="hovered = true" ng-mouseleave="hovered = false">
 			<td class="song-item-number">1</td>
 			<td class="song-item-title">Blue</td>
 			<td class="song-item-duration">3:31</td>
 		</tr>
 	</table>
 </main>
+
+<ng-include src="'/templates/player_bar.html'"></ng-include>
