@@ -13,11 +13,17 @@
     	<link rel="stylesheet" type="text/css" ui-sref="/styles/album.css">
     	<link rel="stylesheet" type="text/css" href="/styles/player_bar.css">
 </head>
-<body>
+<body class="landing">
 	<nav class="navbar">
-    	</nav>
-    
-    	<ui-view></ui-view>
+		<a ui-sref="landing" class="logo">
+			<img src="assets/images/bloc_jams_logo.png" alt="bloc jams logo">
+		</a>
+			<div class="links-container">
+				<a ui-sref="collection" class="navbar-link">collection</a>
+			</div>	
+
+</nav>
+    	<div ui-view></ui-view>
     	
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
@@ -31,5 +37,6 @@
     	<script src="/scripts/controllers/AlbumCtrl.js"></script>
 	<script src="/scripts/controllers/PlayerBarCtrl.js"></script>
 	<script src="/scripts/directives/seekBar.js"></script>
+	<script src="/scripts/filters/timecode.js"></script>
 </body>
 </html>
