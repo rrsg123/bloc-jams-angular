@@ -33,6 +33,7 @@
 				}
 
 		}
+		}
 
 		currentBuzzObject = new buzz.sound(song.audioUrl, {
 			formats: ['mp3'],
@@ -158,7 +159,7 @@
 
 		};
 
-		return SongPlayer;
+		
 
 		/**
 		 * @function setCurrentTime
@@ -171,6 +172,9 @@
 				currentBuzzObject.setTime(time);
 			}
 		};
+		
+
+		return SongPlayer;
 		}
 
 	angular

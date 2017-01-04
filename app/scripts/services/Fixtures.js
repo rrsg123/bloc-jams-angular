@@ -36,7 +36,6 @@
 			return albumPicasso;
 		};
 
-		return Fixtures;
 
 		Fixtures.getCollection = function(numberOfAlbums) {
 			var result = [];
@@ -45,6 +44,10 @@
  			}
 			return result;
 	
+		};
+		
+		return Fixtures;
+		} 
 	angular
  		.module('blocJams')
  		.factory('Fixtures', Fixtures);
